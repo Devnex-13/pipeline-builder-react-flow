@@ -13,9 +13,9 @@ import { TextNode } from './nodes/textNode';
 import { MathNode } from './nodes/mathNode';
 import { DelayNode } from './nodes/delayNode';
 import { FilterNode } from './nodes/filterNode';
-
-import 'reactflow/dist/style.css';
 import { ConditionalNode } from './nodes/conditionNode';
+import { ApiFetchNode } from './nodes/apiFetchNode';
+import 'reactflow/dist/style.css';
 
 const gridSize = 20;
 const proOptions = { hideAttribution: true };
@@ -28,6 +28,7 @@ const nodeTypes = {
   delay: DelayNode,
   condition: FilterNode,
   expression: ConditionalNode,
+  apiFetching: ApiFetchNode
 };
 
 const selector = (state) => ({
