@@ -13,7 +13,7 @@ import { TextNode } from './nodes/textNode';
 import { MathNode } from './nodes/mathNode';
 import { DelayNode } from './nodes/delayNode';
 import { FilterNode } from './nodes/filterNode';
-import { ConditionalNode } from './nodes/conditionNode';
+import { ConditionalNode } from './nodes/conditionalNode';
 import { ApiFetchNode } from './nodes/apiFetchNode';
 import 'reactflow/dist/style.css';
 

@@ -11,9 +11,9 @@ export const ApiFetchNode = ({ id }) => {
     accent="green"
     inputs={[{id: `${id}-url`}]}
     outputs={[{id: `${id}-response`}]} >
-      <label>
+      <label className="field-label">
         Method
-        <select value={method} onChange={(e) => setMethod(e.target.value)}>
+        <select className="field-input" value={method} onChange={(e) => setMethod(e.target.value)}>
           <option value='GET'>GET</option>
           <option value='POST'>POST</option>
           <option value='PUT'>PUT</option>

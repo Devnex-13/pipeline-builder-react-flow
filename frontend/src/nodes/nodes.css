@@ -21,3 +21,120 @@
 .accent-amber  { --accent: #f0a93a; }
 .accent-rose   { --accent: #f0618a; }
 .accent-teal   { --accent: #33c2c2; }
+
+.base-node-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #262b36;
+}
+
+.base-node-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent, #5b8def);
+  flex-shrink: 0;
+}
+
+.base-node-title {
+  font-family: 'JetBrains Mono', 'Fira Code', Menlo, monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e7e9ee;
+}
+
+.base-node-body {
+  padding: 12px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.node-description {
+  font-size: 12px;
+  color: #8b92a5;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.field-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #8b92a5;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.field-input {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  color: #e7e9ee;
+  background: #0f1115;
+  border: 1px solid #2c3140;
+  border-radius: 6px;
+  padding: 6px 8px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.field-input:focus {
+  border-color: var(--accent, #5b8def);
+}
+
+.field-textarea {
+  resize: none;
+  font-family: 'JetBrains Mono', Menlo, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  min-height: 40px;
+}
+
+.handle-row {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transform: translateY(-50%);
+}
+
+.handle-row-left {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.handle-row-right {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.base-node-handle {
+  width: 9px !important;
+  height: 9px !important;
+  background: var(--accent, #5b8def) !important;
+  border: 2px solid #0f1115 !important;
+}
+
+.handle-label {
+  font-family: 'JetBrains Mono', Menlo, monospace;
+  font-size: 9px;
+  color: #8b92a5;
+  background: #0f1115;
+  border: 1px solid #262b36;
+  border-radius: 4px;
+  padding: 1px 5px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.handle-label-left { margin-left: 8px; }
+.handle-label-right { margin-right: 8px; }

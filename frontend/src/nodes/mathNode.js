@@ -14,9 +14,9 @@ export const MathNode = ({ id }) => {
       {id: `${id}-b`,label:'b'},
     ]}
     outputs={[{id: `${id}-result`}]} >
-      <label>
+      <label className="field-label">
         Operator
-        <select value={operator} onChange={(e) => setOperator(e.target.value)}>
+        <select className="field-input" value={operator} onChange={(e) => setOperator(e.target.value)}>
           <option value='+'>Add (+)</option>
           <option value='-'>Sub (-)</option>
           <option value='*'>Mul (*)</option>

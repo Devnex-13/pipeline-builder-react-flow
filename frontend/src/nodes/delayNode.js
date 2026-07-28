@@ -7,9 +7,10 @@ export const DelayNode = ({ id }) => {
 
   return (
     <BaseNode title='Delay' accent="blue" inputs={[{id: `${id}-in`}]} outputs={[{id: `${id}-out`}]}>
-    <label>
+    <label className="field-label">
       Second
       <input
+      className="field-input"
       type='number'
       min='0'
       step='0.1'

@@ -18,17 +18,18 @@ export const InputNode = ({ id, data }) => {
 
   return (
     <BaseNode title='Input' accent='blue' outputs={[{ id: `${id}-value` }]}>
-        <label>
+        <label className="field-label">
           Name:
-          <input 
-            type="text" 
-            value={currName} 
-            onChange={handleNameChange} 
+          <input
+          className="field-input"
+          type="text" 
+          value={currName} 
+          onChange={handleNameChange} 
           />
         </label>
-        <label>
+        <label className="field-label">
           Type:
-          <select value={inputType} onChange={handleTypeChange}>
+          <select className="field-input" value={inputType} onChange={handleTypeChange}>
             <option value="Text">Text</option>
             <option value="File">File</option>
           </select>

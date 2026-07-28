@@ -15,7 +15,7 @@ export const LLMNode = ({ id, data }) => {
       ]}
     outputs={[{ id: `${id}-response`}]}>
 
-    <p>Runs a language model over the given prompt.</p>
+    <p className="node-description">Runs a language model over the given prompt.</p>
 
     </BaseNode>
   );

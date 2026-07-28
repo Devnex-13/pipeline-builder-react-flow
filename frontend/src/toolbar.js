@@ -14,7 +14,7 @@ export const PipelineToolbar = () => {
                 <DraggableNode type='mathop' label='Math' />
                 <DraggableNode type='delay' label='Delay' />
                 <DraggableNode type='filter' label='Filter' />
-                <DraggableNode type='expression' label='Condition' />
+                <DraggableNode type='expression' label='Expression' />
                 <DraggableNode type='apiFetching' label='Api Request' />
             </div>
         </div>

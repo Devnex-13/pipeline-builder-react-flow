@@ -8,17 +8,18 @@ export const ConditionalNode = ({id}) => {
 
   return (
     <BaseNode 
-    type='Condition' 
+    title='Conditional' 
     accent="purple"
     inputs={[{id: `${id}-value`}]} 
     outputs={[
       {id:`${id}-true`, label:'true'},
       {id:`${id}-false`, label:'false'}
       ]}>
-      <label>
-        Condition
+      <label className="field-label">
+        Expression
         <input
         type='text'
+        className="field-input"
         value={expression}
         onChange={(e) => setExpression(e.target.value)} />
       </label>

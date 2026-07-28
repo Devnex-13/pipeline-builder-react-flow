@@ -13,12 +13,13 @@ export const TextNode = ({ id, data }) => {
 
   return (
     <BaseNode title='Text' accent='amber' outputs={[{id:`${id}-output`}]}>
-        <label>
+        <label className="field-label">
           Text:
-          <input 
-            type="text" 
+          <textarea
+            className="field-input field-textarea"
             value={currText} 
             onChange={handleTextChange} 
+            placeholder="Enter text, use {{variable}} to add inputs"
           />
         </label>
     </BaseNode>
