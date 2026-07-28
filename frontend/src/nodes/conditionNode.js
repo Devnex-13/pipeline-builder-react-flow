@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { BaseNode } from "./BasicNode"
 
-export const ConditionalNode = () => {
+export const ConditionalNode = ({id}) => {
 
   const [expression, setExpression] = useState("")
 
