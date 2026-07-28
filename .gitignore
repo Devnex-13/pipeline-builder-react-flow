@@ -1,0 +1,30 @@
+# Root repository ignore rules
+
+# Node module folders
+node_modules/
+
+# React frontend build artifacts and local environment files
+/frontend/node_modules/
+/frontend/build/
+/frontend/.pnp
+/frontend/.pnp.js
+/frontend/.DS_Store
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Python artifacts (backend)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.env
+.env.*
+
+# Misc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
