@@ -12,7 +12,7 @@ export const ApiFetchNode = ({ id }) => {
     outputs={[{id: `${id}-response`}]} >
       <label>
         Method
-        <select value={operator} onChange={(e) => setOperator(e.target.value)}>
+        <select value={method} onChange={(e) => setMethod(e.target.value)}>
           <option value='GET'>GET</option>
           <option value='POST'>POST</option>
           <option value='PUT'>PUT</option>
