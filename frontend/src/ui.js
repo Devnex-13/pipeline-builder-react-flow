@@ -12,6 +12,7 @@ import { OutputNode } from './nodes/outputNode';
 import { TextNode } from './nodes/textNode';
 import { MathNode } from './nodes/mathNode';
 import { DelayNode } from './nodes/delayNode';
+import { FilterNode } from './nodes/filterNode';
 
 import 'reactflow/dist/style.css';
 
@@ -24,6 +25,7 @@ const nodeTypes = {
   text: TextNode,
   mathop: MathNode,
   delay: DelayNode,
+  filterCond: FilterNode,
 };
 
 const selector = (state) => ({
