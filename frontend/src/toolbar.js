@@ -13,7 +13,8 @@ export const PipelineToolbar = () => {
                 <DraggableNode type='text' label='Text' />
                 <DraggableNode type='mathop' label='Math' />
                 <DraggableNode type='delay' label='Delay' />
-                <DraggableNode type='filterCond' label='Filter' />
+                <DraggableNode type='filter' label='Filter' />
+                <DraggableNode type='expression' label='Condition' />
             </div>
         </div>
     );

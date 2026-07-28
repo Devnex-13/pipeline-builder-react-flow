@@ -15,6 +15,7 @@ import { DelayNode } from './nodes/delayNode';
 import { FilterNode } from './nodes/filterNode';
 
 import 'reactflow/dist/style.css';
+import { ConditionalNode } from './nodes/conditionNode';
 
 const gridSize = 20;
 const proOptions = { hideAttribution: true };
@@ -25,7 +26,8 @@ const nodeTypes = {
   text: TextNode,
   mathop: MathNode,
   delay: DelayNode,
-  filterCond: FilterNode,
+  condition: FilterNode,
+  expression: ConditionalNode,
 };
 
 const selector = (state) => ({
