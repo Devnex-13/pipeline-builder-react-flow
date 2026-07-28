@@ -8,6 +8,7 @@ export const MathNode = ({ id }) => {
   return (
     <BaseNode 
     title='Math'
+    accent="teal"
     inputs={[
       {id: `${id}-a`,label:'a'},
       {id: `${id}-b`,label:'b'},

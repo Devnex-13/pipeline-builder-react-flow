@@ -1,14 +1,16 @@
 import { Handle, Position } from 'reactflow';
+import "./nodes.css"
 
 export const BaseNode = ({
   title,
+  accent = 'blue',
   inputs=[],
   outputs=[],
   children,
   width
 }) => {
   return (
-    <div>
+    <div class={`base-node accent-${accent}`}>
       {inputs.map((handle,i) => (
         <div key={handle.id}>
           <Handle type='target' position={Position.Left} id={handle.id}/>

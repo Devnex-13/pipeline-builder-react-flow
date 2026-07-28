@@ -17,7 +17,7 @@ export const InputNode = ({ id, data }) => {
   };
 
   return (
-    <BaseNode title='Input' outputs={[{ id: `${id}-value` }]}>
+    <BaseNode title='Input' accent='blue' outputs={[{ id: `${id}-value` }]}>
         <label>
           Name:
           <input 

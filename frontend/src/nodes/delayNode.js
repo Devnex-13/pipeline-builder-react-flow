@@ -6,7 +6,7 @@ export const DelayNode = ({ id }) => {
   const [second, setSecond] = useState('1');
 
   return (
-    <BaseNode title='Delay' inputs={[{id: `${id}-in`}]} outputs={[{id: `${id}-out`}]}>
+    <BaseNode title='Delay' accent="blue" inputs={[{id: `${id}-in`}]} outputs={[{id: `${id}-out`}]}>
     <label>
       Second
       <input

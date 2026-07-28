@@ -8,6 +8,7 @@ export const ApiFetchNode = ({ id }) => {
   return (
     <BaseNode 
     title='API Fetching'
+    accent="green"
     inputs={[{id: `${id}-url`}]}
     outputs={[{id: `${id}-response`}]} >
       <label>

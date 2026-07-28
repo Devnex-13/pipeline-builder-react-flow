@@ -9,6 +9,7 @@ export const ConditionalNode = ({id}) => {
   return (
     <BaseNode 
     type='Condition' 
+    accent="purple"
     inputs={[{id: `${id}-value`}]} 
     outputs={[
       {id:`${id}-true`, label:'true'},

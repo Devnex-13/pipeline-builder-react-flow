@@ -12,7 +12,7 @@ export const TextNode = ({ id, data }) => {
   };
 
   return (
-    <BaseNode title='Text' outputs={[{id:`${id}-output`}]}>
+    <BaseNode title='Text' accent='amber' outputs={[{id:`${id}-output`}]}>
         <label>
           Text:
           <input 

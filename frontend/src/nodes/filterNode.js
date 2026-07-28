@@ -6,7 +6,7 @@ export const FilterNode = ({id}) => {
   const [condition, setCondition] = useState('length > 0')
 
   return (
-    <BaseNode title='Filter' inputs={[{id:`${id}-items`}]} outputs={[{id:`${id}-filtered`}]}>
+    <BaseNode title='Filter' accent='rose' inputs={[{id:`${id}-items`}]} outputs={[{id:`${id}-filtered`}]}>
       <label>
         Filter
         <input

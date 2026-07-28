@@ -19,6 +19,7 @@ export const OutputNode = ({ id, data }) => {
   return (
     <BaseNode 
     title='Output' 
+    accent='green'
     inputs={[{id: `${id}-value`}]}>
         <label>
           Name:

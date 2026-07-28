@@ -8,12 +8,13 @@ export const LLMNode = ({ id, data }) => {
   return (
     <BaseNode 
     title='LLM' 
+    accent='purple'
     inputs={[
       { id: `${id}-system`,label:'system'},
       { id: `${id}-prompt`,label:'prompt'}
       ]}
     outputs={[{ id: `${id}-response`}]}>
-      
+
     <p>Runs a language model over the given prompt.</p>
 
     </BaseNode>
