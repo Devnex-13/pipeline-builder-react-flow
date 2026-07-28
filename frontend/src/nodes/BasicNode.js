@@ -11,7 +11,7 @@ export const BaseNode = ({
     <div>
       {inputs.map((handle,i) => (
         <div key={handle.id}>
-          <Handle type='target' position={Position.Left} id={`${id}-system`}/>
+          <Handle type='target' position={Position.Left} id={handle.id}/>
           {handle.label && <span>{handle.label}</span>}
         </div>
       ))}
@@ -23,8 +23,8 @@ export const BaseNode = ({
 
       {outputs.map((handle,i) => (
         <div key={handle.id}>
-          <Handle type='source' position={Position.Right} id={`${id}-value`}/>
           {handle.label && <span>{handle.label}</span>}
+          <Handle type='source' position={Position.Right} id={handle.id}/>
         </div>
       ))}
     </div>

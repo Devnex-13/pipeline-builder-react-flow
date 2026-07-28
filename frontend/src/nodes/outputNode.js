@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Handle, Position } from 'reactflow';
+import { BaseNode } from './BasicNode';
 
 export const OutputNode = ({ id, data }) => {
   const [currName, setCurrName] = useState(data?.outputName || id.replace('customOutput-', 'output_'));
@@ -16,16 +17,9 @@ export const OutputNode = ({ id, data }) => {
   };
 
   return (
-    <div style={{width: 200, height: 80, border: '1px solid black'}}>
-      <Handle
-        type="target"
-        position={Position.Left}
-        id={`${id}-value`}
-      />
-      <div>
-        <span>Output</span>
-      </div>
-      <div>
+    <BaseNode 
+    title='Output' 
+    inputs={[{id: `${id}-value`}]}>
         <label>
           Name:
           <input 
@@ -41,7 +35,6 @@ export const OutputNode = ({ id, data }) => {
             <option value="File">Image</option>
           </select>
         </label>
-      </div>
-    </div>
+    </BaseNode>
   );
 }
