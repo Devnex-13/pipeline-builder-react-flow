@@ -49,9 +49,7 @@ export const SubmitButton = () => {
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', padding: '16px 0' }}>
         <button
         type="button"
-        onClick={handleSubmit}
-        disabled={isSubmitting}
-        style={{
+         style={{
           fontFamily: "'Inter', sans-serif",
           fontSize: '13px',
           fontWeight: 600,
@@ -62,6 +60,8 @@ export const SubmitButton = () => {
           padding: '10px 28px',
           cursor: isSubmitting ? 'default' : 'pointer',
         }}
+        onClick={handleSubmit}
+        disabled={isSubmitting}
         >
         {isSubmitting ? 'Submitting…' : 'Submit'}
         </button>
