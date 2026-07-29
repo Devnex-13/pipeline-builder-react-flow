@@ -89,7 +89,7 @@ export const PipelineUI = () => {
             addNode(newNode);
           }
         },
-        [reactFlowInstance]
+        [reactFlowInstance, getNodeID, addNode]
     );
 
     const onDragOver = useCallback((event) => {
@@ -113,10 +113,11 @@ export const PipelineUI = () => {
                 proOptions={proOptions}
                 snapGrid={[gridSize, gridSize]}
                 connectionLineType='smoothstep'
+                defaultEdgeOptions={{ style: { stroke: '#3a4152', strokeWidth: 1.5 } }}
             >
-                <Background color="#aaa" gap={gridSize} />
-                <Controls />
-                <MiniMap />
+                <Background color="#242938" gap={gridSize} />
+                <Controls style={{ filter: 'invert(0.9)' }} />
+                <MiniMap style={{ background: '#171a21' }} nodeColor="#2c3140" maskColor="rgba(15,17,21,0.7)" />
             </ReactFlow>
         </div>
         </>
