@@ -26,7 +26,7 @@ const nodeTypes = {
   text: TextNode,
   mathop: MathNode,
   delay: DelayNode,
-  condition: FilterNode,
+  filter: FilterNode,
   expression: ConditionalNode,
   apiFetching: ApiFetchNode
 };
